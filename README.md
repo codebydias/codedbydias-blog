@@ -1,3 +1,25 @@
+**CodedByDias** - Portfólio & Blog Tech 
+
+ Um espaço digital onde compartilho minha jornada na bolha tech, projetos pessoais e aprendizados na área de desenvolvimento.
+
+🚀 **O que você encontra aqui  "futuramente":**
+- Meu portfólio profissional com projetos destacados
+- Artigos técnicos e reflexões sobre tecnologia
+- Tutoriais e dicas de desenvolvimento web
+- Experiências pessoais na carreira tech
+
+💡 **Tecnologias utilizadas:**
+- Next.js (App Router)
+- MongoDB (Banco de dados)
+- Tailwind CSS (Estilização)
+- TypeScript (Tipagem estática)
+
+📌 **Objetivo:** Compartilhar conhecimento, documentar aprendizados e conectar-me com outros profissionais da área.
+
+🔗 Acesse em: [link-do-seu-deploy] (adicione quando estiver disponível)
+
+
+
 ## 📋 To-Do List do Projeto
 
 ### ✅ Funcionalidades Básicas (Implementadas)
