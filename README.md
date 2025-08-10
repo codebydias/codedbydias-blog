@@ -16,7 +16,7 @@
 
 📌 **Objetivo:** Compartilhar conhecimento, documentar aprendizados e conectar-me com outros profissionais da área.
 
-🔗 Acesse em: [link-do-seu-deploy] (adicione quando estiver disponível)
+🔗 Acesse em: [link-do-seu-deploy]
 
 
 
