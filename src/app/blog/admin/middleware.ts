@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server"
 export function middleware(req: NextRequest) {
   const password = req.headers.get("x-blog-password") || req.nextUrl.searchParams.get("password")
 
-  if (password !== process.env.NEXT__BLOG_SECRET_PASSWORD) {
+  if (password !== process.env.NEXT_BLOG_SECRET_PASSWORD) {
     return new NextResponse("Unauthorized", { status: 401 })
   }
 
