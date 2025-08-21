@@ -25,11 +25,13 @@ export default function AdminCreatePost() {
       });
 
       if (!res.ok) throw new Error("Falha ao criar post");
-      router.push("/blog"); 
-    } catch (err: any) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
+      router.push("/blog");
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setError(err.message);
+      } else {
+        setError("Erro inesperado");
+      }
     }
   };
 
