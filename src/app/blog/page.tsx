@@ -1,6 +1,8 @@
 import { prisma } from "@/libs/prisma";
 import Link from "next/link";
 
+export const revalidate = 0; // ssr
+
 export default async function BlogPage() {
   const posts = await prisma.post.findMany({ orderBy: { createdAt: "desc" } });
 
