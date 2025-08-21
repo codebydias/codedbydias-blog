@@ -9,6 +9,7 @@ export default function AdminCreatePost() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
+  type AppError = Error & { message: string };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,12 +27,11 @@ export default function AdminCreatePost() {
 
       if (!res.ok) throw new Error("Falha ao criar post");
       router.push("/blog");
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        setError(err.message);
-      } else {
-        setError("Erro inesperado");
-      }
+    } catch (err) {
+      const error = err as AppError;
+      setError(error.message ?? "Erro inesperado");
+    } finally {
+      setLoading(false);
     }
   };
 
