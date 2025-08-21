@@ -1,11 +1,12 @@
 import { prisma } from "@/libs/prisma";
 
-interface Params {
+interface PostPageProps {
   params: { id: string };
 }
 
-export default async function PostPage({ params }: Params) {
+export default async function PostPage({ params }: PostPageProps) {
   const post = await prisma.post.findUnique({ where: { id: params.id } });
+
   if (!post) return <p>Post não encontrado</p>;
 
   return (
