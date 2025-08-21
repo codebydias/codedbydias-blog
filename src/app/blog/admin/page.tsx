@@ -25,7 +25,7 @@ export default function AdminCreatePost() {
       });
 
       if (!res.ok) throw new Error("Falha ao criar post");
-      router.push("/blog"); // volta para lista de posts
+      router.push("/blog"); 
     } catch (err: any) {
       setError(err.message);
     } finally {
