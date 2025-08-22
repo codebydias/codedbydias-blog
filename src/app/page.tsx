@@ -2,36 +2,36 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
-      {/* HERO */}
-      <section className="text-center py-24 ">
-        <h1 className="text-5xl font-bold">
+    <main className="px-4 md:px-0">
+    
+      <section className="text-center py-24">
+        <h1 className="text-4xl sm:text-5xl font-bold">
           Olá, eu sou <span className="text-blue-600">João Victor T. Dias</span>
         </h1>
-        <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
+        <p className="mt-6 text-base sm:text-lg text-gray-600 max-w-xl sm:max-w-2xl mx-auto">
           Desenvolvedor Full-Stack focado em back-end, apaixonado por criar
           soluções escaláveis, performáticas e com código limpo.
         </p>
-        <div className="mt-10 space-x-4">
+        <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <Link
             href="/projects"
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
           >
             Ver Projetos
           </Link>
           <Link
             href="/blog"
-            className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition"
+            className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition text-center"
           >
             Ler Blog
           </Link>
         </div>
       </section>
 
-      {/* MINI BIO */}
-      <section className="py-16 text-center max-w-3xl mx-auto">
-        <h2 className="text-2xl font-semibold">Quem sou eu?</h2>
-        <p className="mt-4 text-gray-600">
+      
+      <section className="py-16 text-center max-w-xl sm:max-w-3xl mx-auto px-4">
+        <h2 className="text-2xl sm:text-3xl font-semibold">Quem sou eu?</h2>
+        <p className="mt-4 text-gray-600 text-sm sm:text-base">
           Sou desenvolvedor com experiência em Node.js, Fastify, TypeScript,
           Laravel e Java. Gosto de resolver problemas complexos aplicando boas
           práticas como DDD, SOLID e testes. Estou sempre em busca de evoluir e
@@ -45,9 +45,9 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* CHAMADAS RÁPIDAS */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+     
+      <section className="py-16 bg-gray-50 px-4">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
           <Link
             href="/projects"
             className="p-6 bg-white rounded-lg shadow hover:shadow-md transition"
@@ -69,7 +69,9 @@ export default function Home() {
             className="p-6 bg-white rounded-lg shadow hover:shadow-md transition"
           >
             <h3 className="text-lg font-bold">Sobre mim</h3>
-            <p className="mt-2 text-gray-600">Saiba mais sobre minha trajetória.</p>
+            <p className="mt-2 text-gray-600">
+              Saiba mais sobre minha trajetória.
+            </p>
           </Link>
         </div>
       </section>
