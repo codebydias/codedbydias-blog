@@ -20,13 +20,13 @@ export default function Footer() {
             href="https://linkedin.com/in/codebydias"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-blue-600  text-white rounded-lg hover:bg-blue-700 transition"
+            className="px-6 py-3 bg-green-800  text-white rounded-lg hover:bg-green-700 transition"
           >
             LinkedIn
           </a>
         </div>
         <p className="text-gray-500 text-sm">
-          &copy; {new Date().getFullYear()} João Victor T. Dias. Todos os
+          &copy; {new Date().getFullYear()} Codebydias. Todos os
           direitos reservados.
         </p>
       </div>

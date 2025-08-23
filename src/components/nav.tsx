@@ -6,18 +6,17 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gray-200 shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-green-900 shadow-md z-50">
       <div className="mx-auto px-4 py-3 max-w-6xl flex justify-between items-center">
         <Link
           href="/"
-          className="text-lg font-bold text-gray-800 hover:text-blue-600"
+          className="text-lg font-bold block px-3 py-2 text-white hover:text-green-800 hover:bg-gray-100 rounded-md transition-colors"
         >
           Codebydias
         </Link>
 
-       
         <button
-          className="md:hidden text-gray-800 focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
@@ -45,7 +44,6 @@ export default function Nav() {
           </svg>
         </button>
 
-       
         <ul
           className={`flex flex-col md:flex md:flex-row md:space-x-4 space-y-2 md:space-y-0 absolute md:static top-full left-0 w-full md:w-auto bg-gray-200 md:bg-transparent overflow-hidden transition-all duration-300 ${
             isOpen ? "max-h-96 py-2" : "max-h-0 md:max-h-full"
@@ -54,7 +52,7 @@ export default function Nav() {
           <li>
             <Link
               href="/about"
-              className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-md transition-colors"
+              className="block px-3 py-2 text-white hover:text-green-800 hover:bg-gray-100 rounded-md transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Sobre mim
@@ -63,7 +61,7 @@ export default function Nav() {
           <li>
             <Link
               href="/projects"
-              className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-md transition-colors"
+              className="block px-3 py-2 text-white hover:text-green-800 hover:bg-gray-100 rounded-md transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Projetos
@@ -72,7 +70,7 @@ export default function Nav() {
           <li>
             <Link
               href="/blog"
-              className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-100 rounded-md transition-colors"
+              className="block px-3 py-2 text-white hover:text-green-800 hover:bg-gray-100 rounded-md transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Blog

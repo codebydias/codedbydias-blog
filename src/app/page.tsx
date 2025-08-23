@@ -6,7 +6,7 @@ export default function Home() {
     
       <section className="text-center py-24">
         <h1 className="text-4xl sm:text-5xl font-bold">
-          Olá, eu sou <span className="text-blue-600">João Victor T. Dias</span>
+          Olá, eu sou <span className="text-green-800">João Victor T. Dias</span>
         </h1>
         <p className="mt-6 text-base sm:text-lg text-gray-600 max-w-xl sm:max-w-2xl mx-auto">
           Desenvolvedor Full-Stack focado em back-end, apaixonado por criar
@@ -15,7 +15,7 @@ export default function Home() {
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
           <Link
             href="/projects"
-            className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition text-center"
+            className="px-6 py-3 bg-green-800 text-white rounded-lg hover:bg-green-600 transition text-center"
           >
             Ver Projetos
           </Link>
@@ -39,7 +39,7 @@ export default function Home() {
         </p>
         <Link
           href="/about"
-          className="inline-block mt-6 text-blue-600 font-medium hover:underline"
+          className="inline-block mt-6 text-green-600 font-medium hover:underline"
         >
           Leia mais →
         </Link>

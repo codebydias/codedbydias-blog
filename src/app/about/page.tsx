@@ -8,7 +8,7 @@ export default async function About() {
 
   return (
     <main className="mt-16 px-4 sm:px-6 lg:px-0 max-w-5xl mx-auto space-y-12">
-      {/* Sobre mim */}
+
       <section className="text-center sm:text-left">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
           Sobre mim
