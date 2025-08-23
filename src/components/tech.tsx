@@ -9,23 +9,31 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiPhp,
+  SiMysql,
+  SiJavascript,
+  SiCss3,
+  SiHtml5,
 } from "react-icons/si";
 
 export default function Tecnologias() {
   const techs = [
     { name: "Node.js", icon: <FaNodeJs className="text-green-600" /> },
     { name: "Fastify", icon: <SiFastify className="text-black" /> },
-    { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
     { name: "Laravel", icon: <SiLaravel className="text-red-500" /> },
-    { name: "Php", icon: <SiPhp className="text-blue-600" /> },
     { name: "React", icon: <FaReact className="text-sky-500" /> },
     { name: "Next", icon: <SiNextdotjs className="text-black" /> },
     { name: "Vue 3", icon: <FaVuejs className="text-green-500" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-500" /> },
     { name: "Prisma", icon: <SiPrisma className="text-gray-700" /> },
     { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-700" /> },
+    { name: "MySQL", icon: <SiMysql className="text-blue-700" /> },
     { name: "MongoDB", icon: <SiMongodb className="text-green-700" /> },
     { name: "Docker", icon: <FaDocker className="text-blue-500" /> },
+    { name: "Php", icon: <SiPhp className="text-blue-600" /> },
+    { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
+    { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" /> },
+    { name: "CSS", icon: <SiCss3 className="text-blue-600" /> },
+    { name: "HTML", icon: <SiHtml5 className="text-red-600" /> },
   ];
 
   return (

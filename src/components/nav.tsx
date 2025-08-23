@@ -45,7 +45,7 @@ export default function Nav() {
         </button>
 
         <ul
-          className={`flex flex-col md:flex md:flex-row md:space-x-4 space-y-2 md:space-y-0 absolute md:static top-full left-0 w-full md:w-auto bg-gray-200 md:bg-transparent overflow-hidden transition-all duration-300 ${
+          className={`flex flex-col md:flex md:flex-row md:space-x-4 space-y-2 md:space-y-0 absolute md:static top-full left-0 w-full md:w-auto bg-green-700 md:bg-transparent overflow-hidden transition-all duration-300 ${
             isOpen ? "max-h-96 py-2" : "max-h-0 md:max-h-full"
           } md:flex`}
         >
@@ -74,6 +74,15 @@ export default function Nav() {
               onClick={() => setIsOpen(false)}
             >
               Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/certificates"
+              className="block px-3 py-2 text-white hover:text-green-800 hover:bg-gray-100 rounded-md transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Certificados
             </Link>
           </li>
         </ul>
