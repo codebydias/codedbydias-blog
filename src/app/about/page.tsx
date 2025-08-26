@@ -8,7 +8,6 @@ export default async function About() {
 
   return (
     <main className="mt-16 px-4 sm:px-6 lg:px-0 max-w-5xl mx-auto space-y-12">
-
       <section className="text-center sm:text-left">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
           Sobre mim
@@ -51,19 +50,6 @@ export default async function About() {
           <span className="font-semibold">gerar valor para as pessoas</span>. No
           fim do dia, o que mais me motiva é ver ideias ganhando vida e fazendo
           diferença de verdade.
-        </p>
-      </section>
-
-      {/* Projetos em destaque */}
-      <section>
-        <h2 className="text-xl sm:text-2xl font-semibold mb-6">
-          Projetos em Destaque
-        </h2>
-        <p className="mb-4 text-gray-600 text-sm sm:text-base">
-          Confira todos os projetos em{" "}
-          <Link href={"/projects"} className="underline text-blue-400">
-            /projects
-          </Link>
         </p>
       </section>
 
